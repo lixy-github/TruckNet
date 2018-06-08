@@ -1,0 +1,515 @@
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    border: 1px solid #c4cccc;
+}
+
+input:focus {
+    border: 1px solid #09AEB0;
+}
+
+button {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    outline: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.overflow:before {
+    display: table;
+    content: "";
+}
+
+.lt {
+    float: left;
+}
+
+.rt {
+    float: right;
+    margin-top: 10px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.red {
+    color: red;
+}
+
+
+/*************header*****************/
+
+.header {
+    width: 100%;
+    height: 65px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.logo {
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 25px;
+    margin-right: 30px;
+    color: #FFFFFF;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.nav li {
+    float: left;
+    padding: 0 3px;
+    line-height: 65px;
+    width: 104px;
+    text-align: center;
+}
+
+.nav li:hover {
+    background: blue;
+}
+
+.nav li a,
+.login li,
+.user li {
+    font-size: 16px;
+    color: #FFFFFF;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.login li,
+.user li {
+    float: left;
+    line-height: 65px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.login li {
+    border: 1px solid #09aeb0;
+    color: #09aeb0;
+    width: 80px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+.login li:nth-child(2) {
+    background: #09aeb0;
+    color: #fff;
+}
+
+.user {
+    display: none;
+}
+
+.photo img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.scroll_top {
+    background: #FFFFFF;
+    box-shadow: 0 0 13px rgba(0, 0, 0, .2);
+}
+
+.scroll_top .logo,
+.scroll_top .nav li a,
+.scroll_top li {
+    color: #09aeb0;
+}
+
+.nav li a:hover {
+    color: #09aeb0;
+}
+
+
+/************banner***************/
+
+.swiper-container {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .slide-1 {
+    background: red;
+}
+
+.slide-2 {
+    background: yellowgreen;
+}
+
+.slide-3 {
+    background: orange;
+} */
+
+.swiper-pagination-bullets {
+    bottom: 60px !important;
+}
+
+.swiper-pagination-bullet {
+    cursor: pointer;
+    width: 40px;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+
+/************功能介绍************/
+
+#floor-1,
+#floor-2,
+#floor-3,
+#floor-4 {
+    width: 100%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.details-nav {
+    margin: 0 auto;
+    width: 680px;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.details-nav li {
+    float: left;
+    width: 136px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.details-nav li.active {
+    background-color: #09aeb0;
+    color: #FFFFFF;
+}
+
+.details div {
+    display: none;
+    width: 100%;
+    height: 500px;
+    line-height: 500px;
+    font-size: 50px;
+    text-align: center;
+    border-top: none;
+}
+
+.details div.active {
+    display: block;
+}
+
+
+/************************/
+
+#floor-2 {
+    width: 100%;
+    min-height: 620px;
+    background: #f9f9fb;
+    padding-bottom: 100px;
+}
+
+.fold {
+    padding-left: 70px;
+}
+
+.fold li {
+    float: left;
+    width: 210px;
+    height: 355px;
+    border: 1px solid #d5dce3;
+    cursor: pointer;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.title-1 {
+    height: 120px;
+    background: #e4e7eb;
+}
+
+
+/**********立即注册***********/
+
+#banner-form {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background: #09aeb0;
+    text-align: center;
+    padding-top: 70px;
+    background: url("../images/bForm-13.jpg");
+}
+
+#banner-form h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+#banner-form input {
+    height: 44px;
+    width: 347px;
+    font-size: 18px;
+    padding: 0 0 0 14px;
+    outline: 0;
+    border: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+#banner-form .btn {
+    height: 44px;
+    margin-left: -6px;
+    width: 137px;
+    background-color: #3ff9f8;
+    font-size: 18px;
+    color: #0d848a;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+}
+
+
+/**************************/
+
+#floor-3 {
+    height: 600px;
+    text-align: center;
+}
+
+
+/************footer**************/
+
+.footer {
+    width: 100%;
+    background-color: #505663;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.footer div.rt {
+    margin-left: 100px;
+}
+
+.footer h3 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer li {
+    height: 30px;
+    line-height: 30px;
+    color: #9ea7b2;
+}
+
+.footer li a {
+    color: #9ea7b2;
+}
+
+.footer li a:hover {
+    color: #FFFFFF;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: 60px;
+    background-color: #2f3542;
+    text-align: center;
+    line-height: 60px;
+    color: #69737f;
+}
+
+
+/**************登录注册**************/
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, .5);
+}
+
+.box {
+    width: 420px;
+    margin: 100px auto 0;
+    padding: 50px 60px;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.x {
+    position: absolute;
+    top: -30px;
+    right: -16px;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.box h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.reg-input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-indent: 16px;
+    font-size: 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form-group {
+    height: 80px;
+}
+
+p.error {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: red;
+    text-indent: 5px;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #09AEB0;
+    background: #09AEB0;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background: #0aced1;
+    border: 1px solid #0aced1;
+}
+
+.vcode input {
+    width: 65%;
+    margin-right: 20px;
+}
+
+.vcode span {
+    width: 118px;
+    height: 48px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.vcode span img {
+    border-radius: 5px;
+}
+
+button.rt {
+    width: 35%;
+    height: 50px;
+    border: 1px solid #c4cccc;
+    font-size: 16px;
+}
+
+button.rt:hover {
+    background: #cccccc;
+}
